@@ -1,0 +1,71 @@
+{
+  "name": "@gg-utils/opentui-ui-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reusable OpenTUI component primitives for terminal command surfaces.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./spinner": {
+      "types": "./src/spinner/index.ts",
+      "default": "./src/spinner/index.ts"
+    },
+    "./progress": {
+      "types": "./src/progress/index.ts",
+      "default": "./src/progress/index.ts"
+    },
+    "./input": {
+      "types": "./src/input/index.ts",
+      "default": "./src/input/index.ts"
+    },
+    "./select": {
+      "types": "./src/select/index.ts",
+      "default": "./src/select/index.ts"
+    },
+    "./status": {
+      "types": "./src/status/index.ts",
+      "default": "./src/status/index.ts"
+    },
+    "./layout": {
+      "types": "./src/layout/index.ts",
+      "default": "./src/layout/index.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "build": "node ../../node_modules/typescript/bin/tsc -p tsconfig.json",
+    "type-check": "node ../../node_modules/typescript/bin/tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.1.90",
+    "@opentui/react": "^0.1.90",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0",
+    "node": ">=24.11.1 <25",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "opentui",
+    "terminal",
+    "cli",
+    "components",
+    "react",
+    "tui"
+  ],
+  "license": "MIT"
+}
