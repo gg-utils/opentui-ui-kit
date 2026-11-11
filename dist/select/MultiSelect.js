@@ -73,4 +73,3 @@ export function MultiSelect({ options, selected, onChange, maxHeight = DEFAULT_M
                 return (_jsxs("box", { children: [_jsx("text", { children: isCursor ? "> " : "  " }), _jsx("text", { children: isSelected ? "[✓] " : "[ ] " }), _jsx("text", { children: displayLabel })] }, option.value));
             }), enabledOptions.length > maxHeight && (_jsxs("text", { children: [visibleStart > 0 ? "↑ " : "  ", "Showing ", visibleStart + 1, "-", visibleEnd, " of ", enabledOptions.length, visibleEnd < enabledOptions.length ? " ↓" : ""] })), showHelp && _jsx("text", { children: helpText })] }));
 }
-//# sourceMappingURL=MultiSelect.js.map

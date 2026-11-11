@@ -14,4 +14,3 @@
  */
 export { Divider } from "./Divider.js";
 export type { DividerProps } from "./Divider.js";
-//# sourceMappingURL=index.d.ts.map

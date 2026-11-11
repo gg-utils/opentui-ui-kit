@@ -5,7 +5,7 @@
  * @see packages/opentui-ui-kit/src/progress/types.ts - Progress component prop type definitions.
  * @documentation reviewed=2026-05-07 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-import { LabeledProgressProps } from "./types";
+import type { LabeledProgressProps } from "./types.js";
 /**
  * Terminal progress track with optional label placement and trailing percentage text.
  *
@@ -15,4 +15,3 @@ import { LabeledProgressProps } from "./types";
 declare const LabeledProgress: ({ value, max, width, fillChar, emptyChar, fillColor, emptyColor, label, labelPosition, labelColor, showPercentage, percentageColor, percentageDecimals, }: LabeledProgressProps) => import("react").ReactNode;
 export { LabeledProgress };
 export default LabeledProgress;
-//# sourceMappingURL=LabeledProgress.d.ts.map

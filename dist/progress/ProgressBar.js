@@ -26,4 +26,3 @@ const ProgressBar = ({ value, max = 100, width = 20, fillChar = "█", emptyChar
 };
 export { ProgressBar };
 export default ProgressBar;
-//# sourceMappingURL=ProgressBar.js.map

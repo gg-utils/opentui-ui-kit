@@ -59,4 +59,3 @@ export const presets = {
  * Dots stay the default because they are compact, recognizable, and work well in most terminals.
  */
 export const defaultPreset = presets.dots;
-//# sourceMappingURL=presets.js.map

@@ -32,4 +32,3 @@ export function ConfirmWithDetails({ message, details = [], defaultValue = true,
     const selectedIndex = defaultValue ? 0 : 1;
     return (_jsxs("box", { border: true, padding: 1, children: [_jsx("text", { attributes: TextAttributes.BOLD, fg: highlightColor, children: message }), hasDetails && (_jsx("box", { marginTop: 1, children: details.map((detail, index) => (_jsxs("text", { attributes: TextAttributes.DIM, children: ["  ", detail.label, ": ", detail.value] }, index))) })), _jsxs("box", { marginTop: 1, children: [_jsxs("text", { children: [confirmLabel, " "] }), _jsx("select", { options: CONFIRM_OPTIONS, selectedIndex: selectedIndex, onSelect: handleSelect })] })] }));
 }
-//# sourceMappingURL=ConfirmWithDetails.js.map

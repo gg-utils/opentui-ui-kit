@@ -1,4 +1,4 @@
-import type { MultiSelectProps } from "./types";
+import type { MultiSelectProps } from "./types.js";
 /**
  * OpenTUI multi-select: keyboard-driven checkbox list with a bounded scroll window.
  *
@@ -8,4 +8,3 @@ import type { MultiSelectProps } from "./types";
  * focus. Long lists use a sliding viewport centered on the cursor (`maxHeight` rows).
  */
 export declare function MultiSelect({ options, selected, onChange, maxHeight, title, showHelp, helpText, renderLabel, }: MultiSelectProps): import("react").ReactNode;
-//# sourceMappingURL=MultiSelect.d.ts.map

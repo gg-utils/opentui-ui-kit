@@ -1,4 +1,4 @@
-import type { TagMultiSelectProps } from "./types";
+import type { TagMultiSelectProps } from "./types.js";
 /**
  * OpenTUI tag-style multi-select: chip borders with row or column keyboard navigation.
  *
@@ -8,4 +8,3 @@ import type { TagMultiSelectProps } from "./types";
  * options are omitted from focus.
  */
 export declare function TagMultiSelect({ options, selected, onChange, maxHeight, direction, gap, selectedBorderStyle, renderLabel, }: TagMultiSelectProps): import("react").ReactNode;
-//# sourceMappingURL=TagMultiSelect.d.ts.map

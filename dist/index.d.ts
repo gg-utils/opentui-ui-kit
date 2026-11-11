@@ -31,4 +31,3 @@ export { StatusIndicator, Badge, STATUS_COLORS, STATUS_SYMBOLS, } from "./status
 export type { StatusType, StatusIndicatorProps, BadgeVariant, BadgeProps, } from "./status/index.js";
 export { Divider } from "./layout/index.js";
 export type { DividerProps } from "./layout/index.js";
-//# sourceMappingURL=index.d.ts.map

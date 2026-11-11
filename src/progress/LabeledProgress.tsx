@@ -5,7 +5,7 @@
  * @see packages/opentui-ui-kit/src/progress/types.ts - Progress component prop type definitions.
  * @documentation reviewed=2026-05-07 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-import { LabeledProgressProps } from "./types";
+import type { LabeledProgressProps } from "./types.js";
 
 /**
  * Bounds a numeric sample to an inclusive range for progress fill calculations.

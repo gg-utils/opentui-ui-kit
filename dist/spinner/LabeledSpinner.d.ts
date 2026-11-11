@@ -1,4 +1,4 @@
-import type { LabeledSpinnerProps } from "./types";
+import type { LabeledSpinnerProps } from "./types.js";
 /**
  * OpenTUI spinner row that advances preset frames on an interval beside optional label text.
  *
@@ -10,4 +10,3 @@ declare const LabeledSpinner: {
     displayName: string;
 };
 export { LabeledSpinner };
-//# sourceMappingURL=LabeledSpinner.d.ts.map

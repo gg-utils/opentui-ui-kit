@@ -8,7 +8,7 @@
 import { useKeyboard } from "@opentui/react";
 import type { KeyEvent } from "@opentui/core";
 import { useState, useMemo } from "react";
-import type { MultiSelectWithSelectAllProps } from "./types";
+import type { MultiSelectWithSelectAllProps } from "./types.js";
 
 const DEFAULT_MAX_HEIGHT = 10;
 const DEFAULT_SELECT_ALL_LABEL = "Select All";

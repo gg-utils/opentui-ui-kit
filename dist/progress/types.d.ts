@@ -131,4 +131,3 @@ export interface MultiStepProgressProps {
     /** Maximum width for labels before truncation */
     maxLabelWidth?: number;
 }
-//# sourceMappingURL=types.d.ts.map

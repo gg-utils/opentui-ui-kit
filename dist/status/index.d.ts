@@ -18,4 +18,3 @@
 export { StatusIndicator, STATUS_COLORS, STATUS_SYMBOLS, } from "./StatusIndicator.js";
 export { Badge } from "./Badge.js";
 export type { StatusType, StatusIndicatorProps, BadgeVariant, BadgeProps, } from "./types.js";
-//# sourceMappingURL=index.d.ts.map

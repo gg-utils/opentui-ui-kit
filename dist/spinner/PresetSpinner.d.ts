@@ -5,7 +5,7 @@
  *
  * @example
  * ```tsx
- * import { PresetSpinner } from "./PresetSpinner";
+ * import { PresetSpinner } from "./PresetSpinner.js";
  *
  * <PresetSpinner preset="dots" color="#00FF00" />
  * ```
@@ -16,7 +16,7 @@
  * @see packages/opentui-ui-kit/src/spinner/index.ts - Barrel that re-exports this wrapper next to `Spinner` and presets.
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-import type { PresetSpinnerProps } from "./types";
+import type { PresetSpinnerProps } from "./types.js";
 /**
  * Renders `Spinner` with frames and interval from the named `presets` entry, falling back when the key is missing.
  *
@@ -28,4 +28,3 @@ declare const PresetSpinner: {
     displayName: string;
 };
 export { PresetSpinner };
-//# sourceMappingURL=PresetSpinner.d.ts.map

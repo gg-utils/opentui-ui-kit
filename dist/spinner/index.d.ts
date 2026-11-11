@@ -13,9 +13,8 @@
  * @see packages/opentui-ui-kit/src/spinner/presets.ts - Spinner presets re-exported here.
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-export { Spinner } from "./Spinner";
-export { LabeledSpinner } from "./LabeledSpinner";
-export { PresetSpinner } from "./PresetSpinner";
-export { presets, presets as SPINNER_PRESETS, defaultPreset } from "./presets";
-export type { SpinnerProps, LabeledSpinnerProps, SpinnerPreset, SpinnerPresets, SpinnerPresetName, PresetSpinnerProps, } from "./types";
-//# sourceMappingURL=index.d.ts.map
+export { Spinner } from "./Spinner.js";
+export { LabeledSpinner } from "./LabeledSpinner.js";
+export { PresetSpinner } from "./PresetSpinner.js";
+export { presets, presets as SPINNER_PRESETS, defaultPreset } from "./presets.js";
+export type { SpinnerProps, LabeledSpinnerProps, SpinnerPreset, SpinnerPresets, SpinnerPresetName, PresetSpinnerProps, } from "./types.js";

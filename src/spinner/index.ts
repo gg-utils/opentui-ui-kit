@@ -15,12 +15,12 @@
  */
 
 // Component exports
-export { Spinner } from "./Spinner";
-export { LabeledSpinner } from "./LabeledSpinner";
-export { PresetSpinner } from "./PresetSpinner";
+export { Spinner } from "./Spinner.js";
+export { LabeledSpinner } from "./LabeledSpinner.js";
+export { PresetSpinner } from "./PresetSpinner.js";
 
 // Preset exports
-export { presets, presets as SPINNER_PRESETS, defaultPreset } from "./presets";
+export { presets, presets as SPINNER_PRESETS, defaultPreset } from "./presets.js";
 
 // Type exports
 export type {
@@ -30,4 +30,4 @@ export type {
   SpinnerPresets,
   SpinnerPresetName,
   PresetSpinnerProps,
-} from "./types";
+} from "./types.js";

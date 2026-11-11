@@ -7,4 +7,3 @@ import type { SingleKeyConfirmProps } from "./types.js";
  */
 declare const SingleKeyConfirm: ({ message, defaultValue, onSubmit, hintColor, }: SingleKeyConfirmProps) => import("react").ReactNode;
 export { SingleKeyConfirm };
-//# sourceMappingURL=SingleKeyConfirm.d.ts.map

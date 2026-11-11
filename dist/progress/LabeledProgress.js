@@ -58,4 +58,3 @@ const LabeledProgress = ({ value, max = 100, width = 20, fillChar = "█", empty
 };
 export { LabeledProgress };
 export default LabeledProgress;
-//# sourceMappingURL=LabeledProgress.js.map

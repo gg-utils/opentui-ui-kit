@@ -6,7 +6,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "@opentui/react/jsx-runtime";
  *
  * @example
  * ```tsx
- * import { LabeledSpinner } from "./LabeledSpinner";
+ * import { LabeledSpinner } from "./LabeledSpinner.js";
  *
  * <LabeledSpinner label="Fetching…" labelPosition="right" />
  * ```
@@ -18,7 +18,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "@opentui/react/jsx-runtime";
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
 import { useEffect, useState } from "react";
-import { defaultPreset } from "./presets";
+import { defaultPreset } from "./presets.js";
 /**
  * OpenTUI spinner row that advances preset frames on an interval beside optional label text.
  *
@@ -34,8 +34,8 @@ const LabeledSpinner = ({ frames = defaultPreset.frames, interval = defaultPrese
         return () => clearInterval(timer);
     }, [frames.length, interval]);
     const gapSpaces = " ".repeat(gap);
-    const spinnerElement = _jsx("text", { fg: color, children: frames[frame] });
-    const labelElement = (_jsx("text", { fg: labelColor ?? (dimLabel ? "#666666" : undefined), children: label }));
+    const spinnerElement = _jsx("text", { ...(color === undefined ? {} : { fg: color }), children: frames[frame] });
+    const labelElement = (_jsx("text", { ...((labelColor ?? (dimLabel ? "#666666" : undefined)) === undefined ? {} : { fg: labelColor ?? "#666666" }), children: label }));
     if (labelPosition === "left") {
         return (_jsxs("box", { children: [labelElement, _jsx("text", { children: gapSpaces }), spinnerElement] }));
     }
@@ -43,4 +43,3 @@ const LabeledSpinner = ({ frames = defaultPreset.frames, interval = defaultPrese
 };
 LabeledSpinner.displayName = "LabeledSpinner";
 export { LabeledSpinner };
-//# sourceMappingURL=LabeledSpinner.js.map

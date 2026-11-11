@@ -60,9 +60,8 @@ const Badge = ({
 
   return (
     <box
-      borderStyle={bordered ? "single" : undefined}
-      borderColor={bordered ? colors.border : undefined}
-      backgroundColor={filled ? colors.bg : undefined}
+      {...(bordered ? { borderStyle: "single" as const, borderColor: colors.border } : {})}
+      {...(filled ? { backgroundColor: colors.bg } : {})}
     >
       <box paddingLeft={1} paddingRight={1}>
         {icon && <text style={{ fg: colors.fg }}>{icon} </text>}

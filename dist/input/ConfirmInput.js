@@ -42,4 +42,3 @@ const ConfirmInput = ({ message, defaultValue = true, onSubmit, }) => {
     return (_jsxs("box", { children: [_jsxs("text", { children: [message, " "] }), _jsx("select", { options: DEFAULT_OPTIONS, selectedIndex: selectedIndex, onSelect: handleSelect })] }));
 };
 export { ConfirmInput };
-//# sourceMappingURL=ConfirmInput.js.map

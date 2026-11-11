@@ -29,4 +29,3 @@ export declare function Divider({ label, width, char, color, labelPadding, }: Di
 export declare namespace Divider {
     var displayName: string;
 }
-//# sourceMappingURL=Divider.d.ts.map

@@ -1,50 +1,51 @@
 {
   "name": "@gg-utils/opentui-ui-kit",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.2.0",
   "type": "module",
   "description": "Reusable OpenTUI component primitives for terminal command surfaces.",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.ts",
-      "default": "./src/index.ts"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     },
     "./spinner": {
-      "types": "./src/spinner/index.ts",
-      "default": "./src/spinner/index.ts"
+      "types": "./dist/spinner/index.d.ts",
+      "default": "./dist/spinner/index.js"
     },
     "./progress": {
-      "types": "./src/progress/index.ts",
-      "default": "./src/progress/index.ts"
+      "types": "./dist/progress/index.d.ts",
+      "default": "./dist/progress/index.js"
     },
     "./input": {
-      "types": "./src/input/index.ts",
-      "default": "./src/input/index.ts"
+      "types": "./dist/input/index.d.ts",
+      "default": "./dist/input/index.js"
     },
     "./select": {
-      "types": "./src/select/index.ts",
-      "default": "./src/select/index.ts"
+      "types": "./dist/select/index.d.ts",
+      "default": "./dist/select/index.js"
     },
     "./status": {
-      "types": "./src/status/index.ts",
-      "default": "./src/status/index.ts"
+      "types": "./dist/status/index.d.ts",
+      "default": "./dist/status/index.js"
     },
     "./layout": {
-      "types": "./src/layout/index.ts",
-      "default": "./src/layout/index.ts"
+      "types": "./dist/layout/index.d.ts",
+      "default": "./dist/layout/index.js"
     }
   },
   "files": [
-    "dist",
-    "src",
+    "dist/",
     "README.md",
-    "tsconfig.json"
+    "LICENSE"
   ],
   "scripts": {
-    "build": "node ../../node_modules/typescript/bin/tsc -p tsconfig.json",
-    "type-check": "node ../../node_modules/typescript/bin/tsc --noEmit -p tsconfig.json"
+    "build": "tsc -p tsconfig.build.json",
+    "type-check": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint --max-warnings 0 .",
+    "test": "tsc -p tsconfig.test.json && node --test \".test-dist/**/*.unit.test.js\"",
+    "check:dist": "sh scripts/check-dist.sh"
   },
   "dependencies": {
     "@opentui/core": "^0.1.90",
@@ -52,11 +53,15 @@
     "react": "^19.2.0"
   },
   "devDependencies": {
-    "@types/react": "^19.2.0"
+    "@types/react": "19.2.0",
+    "typescript": "5.9.3",
+    "@types/node": "22.20.5",
+    "eslint": "9.39.5",
+    "typescript-eslint": "8.72.2"
   },
   "engines": {
     "bun": ">=1.0.0",
-    "node": ">=24.11.1 <25",
+    "node": ">=22.0.0 <27",
     "npm": ">=9.0.0"
   },
   "keywords": [
@@ -67,5 +72,9 @@
     "react",
     "tui"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gg-utils/opentui-ui-kit.git"
+  }
 }

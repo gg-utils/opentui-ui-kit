@@ -22,4 +22,3 @@ declare const Badge: {
     displayName: string;
 };
 export { Badge };
-//# sourceMappingURL=Badge.d.ts.map

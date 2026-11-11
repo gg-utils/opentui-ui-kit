@@ -1,4 +1,4 @@
-import type { MultiSelectWithSelectAllProps } from "./types";
+import type { MultiSelectWithSelectAllProps } from "./types.js";
 /**
  * OpenTUI multi-select with a leading select-all row and separator before enabled options.
  *
@@ -9,4 +9,3 @@ import type { MultiSelectWithSelectAllProps } from "./types";
  * rows. Long lists use a sliding viewport of at most `maxHeight` rows around the cursor.
  */
 export declare function MultiSelectWithSelectAll({ options, selected, onChange, maxHeight, selectAllLabel, title, showHelp, renderLabel, }: MultiSelectWithSelectAllProps): import("react").ReactNode;
-//# sourceMappingURL=MultiSelectWithSelectAll.d.ts.map

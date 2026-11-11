@@ -14,10 +14,10 @@
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
 
-export { ProgressBar } from "./ProgressBar";
-export { LabeledProgress } from "./LabeledProgress";
-export { SegmentedProgress } from "./SegmentedProgress";
-export { MultiStepProgress } from "./MultiStepProgress";
+export { ProgressBar } from "./ProgressBar.js";
+export { LabeledProgress } from "./LabeledProgress.js";
+export { SegmentedProgress } from "./SegmentedProgress.js";
+export { MultiStepProgress } from "./MultiStepProgress.js";
 
 export type {
   ProgressBarProps,
@@ -26,6 +26,6 @@ export type {
   MultiStepProgressProps,
   Step,
   StepStatus,
-} from "./types";
+} from "./types.js";
 
-export { default } from "./ProgressBar";
+export { default } from "./ProgressBar.js";

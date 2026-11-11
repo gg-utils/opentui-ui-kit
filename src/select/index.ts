@@ -28,9 +28,9 @@
  */
 
 // Component exports
-export { MultiSelect } from "./MultiSelect";
-export { MultiSelectWithSelectAll } from "./MultiSelectWithSelectAll";
-export { TagMultiSelect } from "./TagMultiSelect";
+export { MultiSelect } from "./MultiSelect.js";
+export { MultiSelectWithSelectAll } from "./MultiSelectWithSelectAll.js";
+export { TagMultiSelect } from "./TagMultiSelect.js";
 
 // Type exports
 export type {
@@ -39,4 +39,4 @@ export type {
   MultiSelectProps,
   MultiSelectWithSelectAllProps,
   TagMultiSelectProps,
-} from "./types";
+} from "./types.js";

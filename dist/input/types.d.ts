@@ -91,4 +91,3 @@ export interface ConfirmOption {
     /** String value ("true" or "false") */
     value: string;
 }
-//# sourceMappingURL=types.d.ts.map

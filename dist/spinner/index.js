@@ -14,9 +14,8 @@
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
 // Component exports
-export { Spinner } from "./Spinner";
-export { LabeledSpinner } from "./LabeledSpinner";
-export { PresetSpinner } from "./PresetSpinner";
+export { Spinner } from "./Spinner.js";
+export { LabeledSpinner } from "./LabeledSpinner.js";
+export { PresetSpinner } from "./PresetSpinner.js";
 // Preset exports
-export { presets, presets as SPINNER_PRESETS, defaultPreset } from "./presets";
-//# sourceMappingURL=index.js.map
+export { presets, presets as SPINNER_PRESETS, defaultPreset } from "./presets.js";

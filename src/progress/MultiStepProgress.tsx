@@ -5,7 +5,7 @@
  * @see packages/opentui-ui-kit/src/progress/types.ts - Step status and component props.
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-import { MultiStepProgressProps, Step } from "./types";
+import type { MultiStepProgressProps, Step } from "./types.js";
 
 /**
  * Resolves the marker character for a step using its status and the configured char map.
