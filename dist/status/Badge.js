@@ -34,8 +34,7 @@ const BADGE_COLORS = {
  */
 const Badge = ({ children, variant = "neutral", icon, bordered = true, filled = false, }) => {
     const colors = BADGE_COLORS[variant];
-    return (_jsx("box", { borderStyle: bordered ? "single" : undefined, borderColor: bordered ? colors.border : undefined, backgroundColor: filled ? colors.bg : undefined, children: _jsxs("box", { paddingLeft: 1, paddingRight: 1, children: [icon && _jsxs("text", { style: { fg: colors.fg }, children: [icon, " "] }), _jsx("text", { style: { fg: colors.fg }, children: children })] }) }));
+    return (_jsx("box", { ...(bordered ? { borderStyle: "single", borderColor: colors.border } : {}), ...(filled ? { backgroundColor: colors.bg } : {}), children: _jsxs("box", { paddingLeft: 1, paddingRight: 1, children: [icon && _jsxs("text", { style: { fg: colors.fg }, children: [icon, " "] }), _jsx("text", { style: { fg: colors.fg }, children: children })] }) }));
 };
 Badge.displayName = "Badge";
 export { Badge };
-//# sourceMappingURL=Badge.js.map

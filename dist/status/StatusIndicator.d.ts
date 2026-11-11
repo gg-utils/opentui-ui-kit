@@ -26,4 +26,3 @@ export declare function StatusIndicator({ status, label, showDot, }: StatusIndic
 export declare namespace StatusIndicator {
     var displayName: string;
 }
-//# sourceMappingURL=StatusIndicator.d.ts.map

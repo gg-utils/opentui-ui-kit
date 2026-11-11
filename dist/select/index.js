@@ -27,7 +27,6 @@
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
 // Component exports
-export { MultiSelect } from "./MultiSelect";
-export { MultiSelectWithSelectAll } from "./MultiSelectWithSelectAll";
-export { TagMultiSelect } from "./TagMultiSelect";
-//# sourceMappingURL=index.js.map
+export { MultiSelect } from "./MultiSelect.js";
+export { MultiSelectWithSelectAll } from "./MultiSelectWithSelectAll.js";
+export { TagMultiSelect } from "./TagMultiSelect.js";

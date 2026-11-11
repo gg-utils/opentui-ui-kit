@@ -83,4 +83,3 @@ export interface TagMultiSelectProps extends BaseMultiSelectProps {
     /** Background color for unselected tags */
     unselectedBackgroundColor?: string;
 }
-//# sourceMappingURL=types.d.ts.map

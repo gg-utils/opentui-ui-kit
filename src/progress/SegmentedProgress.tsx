@@ -5,7 +5,7 @@
  * @see packages/opentui-ui-kit/src/progress/types.ts - SegmentedProgress prop type definitions.
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-import { SegmentedProgressProps } from "./types";
+import type { SegmentedProgressProps } from "./types.js";
 
 /**
  * Clamps a numeric value to an inclusive window before converting progress into segment counts.

@@ -20,4 +20,3 @@ export function Divider({ label, width = 40, char = "─", color = "#6b7280", la
     return (_jsx("box", { children: _jsx("text", { style: { fg: color }, children: line }) }));
 }
 Divider.displayName = "Divider";
-//# sourceMappingURL=Divider.js.map

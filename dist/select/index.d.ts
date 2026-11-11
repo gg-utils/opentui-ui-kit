@@ -26,8 +26,7 @@
  * @see packages/opentui-ui-kit/src/select/TagMultiSelect.tsx - Tag-style multi-select component re-exported here.
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-export { MultiSelect } from "./MultiSelect";
-export { MultiSelectWithSelectAll } from "./MultiSelectWithSelectAll";
-export { TagMultiSelect } from "./TagMultiSelect";
-export type { MultiSelectOption, BaseMultiSelectProps, MultiSelectProps, MultiSelectWithSelectAllProps, TagMultiSelectProps, } from "./types";
-//# sourceMappingURL=index.d.ts.map
+export { MultiSelect } from "./MultiSelect.js";
+export { MultiSelectWithSelectAll } from "./MultiSelectWithSelectAll.js";
+export { TagMultiSelect } from "./TagMultiSelect.js";
+export type { MultiSelectOption, BaseMultiSelectProps, MultiSelectProps, MultiSelectWithSelectAllProps, TagMultiSelectProps, } from "./types.js";

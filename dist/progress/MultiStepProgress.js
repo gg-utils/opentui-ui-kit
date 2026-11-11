@@ -77,4 +77,3 @@ const MultiStepProgress = ({ steps, completedChar = "✓", activeChar = "→", p
 };
 export { MultiStepProgress };
 export default MultiStepProgress;
-//# sourceMappingURL=MultiStepProgress.js.map

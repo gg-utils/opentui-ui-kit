@@ -8,7 +8,7 @@
 import { useKeyboard } from "@opentui/react";
 import type { KeyEvent } from "@opentui/core";
 import { useState, useMemo } from "react";
-import type { TagMultiSelectProps } from "./types";
+import type { TagMultiSelectProps } from "./types.js";
 
 const DEFAULT_MAX_HEIGHT = 10;
 

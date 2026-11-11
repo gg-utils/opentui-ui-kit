@@ -7,8 +7,8 @@
  *
  * @example
  * ```tsx
- * import { Spinner } from "./Spinner";
- * import { presets } from "./presets";
+ * import { Spinner } from "./Spinner.js";
+ * import { presets } from "./presets.js";
  *
  * <Spinner frames={presets.line.frames} interval={presets.line.interval} />
  * ```
@@ -18,7 +18,7 @@
  * @see packages/opentui-ui-kit/src/spinner/types.ts - Spinner preset contract that defines the frame and interval shape.
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-import type { SpinnerPresets } from "./types";
+import type { SpinnerPresets } from "./types.js";
 /**
  * Collection of predefined spinner animation presets.
  * Choose the preset that best matches the terminal's visual density and the feedback style you want
@@ -29,5 +29,4 @@ export declare const presets: SpinnerPresets;
  * Default preset used when a caller does not choose one explicitly.
  * Dots stay the default because they are compact, recognizable, and work well in most terminals.
  */
-export declare const defaultPreset: import("./types").SpinnerPreset;
-//# sourceMappingURL=presets.d.ts.map
+export declare const defaultPreset: import("./types.js").SpinnerPreset;

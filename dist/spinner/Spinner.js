@@ -18,7 +18,7 @@ import { jsx as _jsx } from "@opentui/react/jsx-runtime";
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
 import { useEffect, useState } from "react";
-import { defaultPreset } from "./presets";
+import { defaultPreset } from "./presets.js";
 /**
  * Frame-based loading indicator that advances through the active preset until unmounted.
  */
@@ -30,7 +30,6 @@ export function Spinner({ frames = defaultPreset.frames, interval = defaultPrese
         }, interval);
         return () => clearInterval(timer);
     }, [frames.length, interval]);
-    return _jsx("text", { fg: color, children: frames[frame] });
+    return _jsx("text", { ...(color === undefined ? {} : { fg: color }), children: frames[frame] });
 }
 Spinner.displayName = "Spinner";
-//# sourceMappingURL=Spinner.js.map

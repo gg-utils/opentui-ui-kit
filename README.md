@@ -110,3 +110,13 @@ npm run build
 - Components expect an OpenTUI React runtime.
 - This package does not own workflows, subprocesses, or application state machines.
 - Keep command labels and domain copy in consuming apps where possible.
+
+## Use from another repository
+
+Requires Node `>=22.0.0 <27`. Install the built JavaScript and declarations by tag:
+
+```json
+{"dependencies": {"@gg-utils/opentui-ui-kit": "git+https://github.com/gg-utils/opentui-ui-kit.git#v0.2.0"}}
+```
+
+Validation uses the noninteractive package sources and tests. The legacy `examples/demo.tsx` targets an older OpenTUI API and remains outside the TypeScript project and ESLint scope. OpenTUI renderer use requires its supported runtime; Node checks do not start a terminal renderer.

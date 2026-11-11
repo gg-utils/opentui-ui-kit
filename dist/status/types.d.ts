@@ -50,4 +50,3 @@ export interface BadgeProps {
     /** Whether to use a filled background style */
     filled?: boolean;
 }
-//# sourceMappingURL=types.d.ts.map

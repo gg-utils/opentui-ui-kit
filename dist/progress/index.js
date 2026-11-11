@@ -13,9 +13,8 @@
  * @see packages/opentui-ui-kit/src/progress/MultiStepProgress.tsx - Multi-step progress component re-exported here.
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-export { ProgressBar } from "./ProgressBar";
-export { LabeledProgress } from "./LabeledProgress";
-export { SegmentedProgress } from "./SegmentedProgress";
-export { MultiStepProgress } from "./MultiStepProgress";
-export { default } from "./ProgressBar";
-//# sourceMappingURL=index.js.map
+export { ProgressBar } from "./ProgressBar.js";
+export { LabeledProgress } from "./LabeledProgress.js";
+export { SegmentedProgress } from "./SegmentedProgress.js";
+export { MultiStepProgress } from "./MultiStepProgress.js";
+export { default } from "./ProgressBar.js";

@@ -98,4 +98,3 @@ export interface PresetSpinnerProps extends Omit<SpinnerProps, "frames" | "inter
      */
     preset?: SpinnerPresetName;
 }
-//# sourceMappingURL=types.d.ts.map

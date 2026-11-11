@@ -24,7 +24,7 @@
 import { useKeyboard } from "@opentui/react";
 import type { KeyEvent } from "@opentui/core";
 import { useState, useMemo } from "react";
-import type { MultiSelectProps } from "./types";
+import type { MultiSelectProps } from "./types.js";
 
 const DEFAULT_MAX_HEIGHT = 10;
 

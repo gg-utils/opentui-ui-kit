@@ -17,4 +17,3 @@
  */
 export { StatusIndicator, STATUS_COLORS, STATUS_SYMBOLS, } from "./StatusIndicator.js";
 export { Badge } from "./Badge.js";
-//# sourceMappingURL=index.js.map

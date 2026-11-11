@@ -17,8 +17,8 @@
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
 import { useEffect, useState } from "react";
-import type { SpinnerProps } from "./types";
-import { defaultPreset } from "./presets";
+import type { SpinnerProps } from "./types.js";
+import { defaultPreset } from "./presets.js";
 
 /**
  * Frame-based loading indicator that advances through the active preset until unmounted.
@@ -38,7 +38,7 @@ export function Spinner({
     return () => clearInterval(timer);
   }, [frames.length, interval]);
 
-  return <text fg={color}>{frames[frame]}</text>;
+  return <text {...(color === undefined ? {} : { fg: color })}>{frames[frame]}</text>;
 }
 
 Spinner.displayName = "Spinner";

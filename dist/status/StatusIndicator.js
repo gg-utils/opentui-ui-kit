@@ -26,4 +26,3 @@ export function StatusIndicator({ status, label, showDot = true, }) {
     return (_jsxs("box", { children: [showDot && (_jsxs("text", { style: { fg: STATUS_COLORS[status] }, children: [STATUS_SYMBOLS[status], " "] })), _jsx("text", { style: { fg: STATUS_COLORS[status] }, children: label ?? status })] }));
 }
 StatusIndicator.displayName = "StatusIndicator";
-//# sourceMappingURL=StatusIndicator.js.map

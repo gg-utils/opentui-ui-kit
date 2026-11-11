@@ -24,4 +24,3 @@ export { SingleKeyConfirm } from "./SingleKeyConfirm.js";
 export { DangerConfirm } from "./DangerConfirm.js";
 export { ConfirmWithDetails } from "./ConfirmWithDetails.js";
 export type { ConfirmInputProps, SingleKeyConfirmProps, DangerConfirmProps, ConfirmWithDetailsProps, ConfirmDetailItem, ConfirmOption, } from "./types.js";
-//# sourceMappingURL=index.d.ts.map

@@ -38,4 +38,3 @@ const SegmentedProgress = ({ value, max = 100, segments = 10, fillChar = "█", 
 };
 export { SegmentedProgress };
 export default SegmentedProgress;
-//# sourceMappingURL=SegmentedProgress.js.map

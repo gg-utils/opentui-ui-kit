@@ -1,4 +1,4 @@
-import type { SpinnerProps } from "./types";
+import type { SpinnerProps } from "./types.js";
 /**
  * Frame-based loading indicator that advances through the active preset until unmounted.
  */
@@ -6,4 +6,3 @@ export declare function Spinner({ frames, interval, color, }: SpinnerProps): imp
 export declare namespace Spinner {
     var displayName: string;
 }
-//# sourceMappingURL=Spinner.d.ts.map

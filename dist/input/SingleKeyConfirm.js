@@ -33,4 +33,3 @@ const SingleKeyConfirm = ({ message, defaultValue = true, onSubmit, hintColor = 
     return (_jsxs("box", { children: [_jsxs("text", { children: [message, " "] }), _jsx("text", { fg: hintColor, children: hint })] }));
 };
 export { SingleKeyConfirm };
-//# sourceMappingURL=SingleKeyConfirm.js.map

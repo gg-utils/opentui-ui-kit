@@ -8,4 +8,3 @@ import type { ConfirmInputProps } from "./types.js";
  */
 declare const ConfirmInput: ({ message, defaultValue, onSubmit, }: ConfirmInputProps) => import("react").ReactNode;
 export { ConfirmInput };
-//# sourceMappingURL=ConfirmInput.d.ts.map

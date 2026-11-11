@@ -33,4 +33,3 @@ export function DangerConfirm({ message, confirmText, onSubmit, warningColor = D
     }, [isConfirmed, onSubmit]);
     return (_jsxs("box", { border: true, borderColor: warningColor, padding: 1, children: [_jsxs("text", { fg: warningColor, attributes: TextAttributes.BOLD, children: ["\u26A0 ", message] }), _jsxs("text", { marginTop: 1, children: ["Type \"", confirmText, "\" to confirm:"] }), _jsx("box", { marginTop: 1, children: _jsx("input", { value: inputValue, onChange: handleChange, onSubmit: handleSubmit, placeholder: `Type "${confirmText}"...`, width: confirmText.length + 5 }) }), _jsx("text", { fg: isConfirmed ? successColor : pendingColor, marginTop: 1, children: isConfirmed ? "✓ Ready to proceed" : "✗ Confirmation required" })] }));
 }
-//# sourceMappingURL=DangerConfirm.js.map

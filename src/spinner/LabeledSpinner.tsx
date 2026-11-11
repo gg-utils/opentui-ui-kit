@@ -5,7 +5,7 @@
  *
  * @example
  * ```tsx
- * import { LabeledSpinner } from "./LabeledSpinner";
+ * import { LabeledSpinner } from "./LabeledSpinner.js";
  *
  * <LabeledSpinner label="Fetching…" labelPosition="right" />
  * ```
@@ -17,8 +17,8 @@
  * @documentation reviewed=2026-04-13 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
 import { useEffect, useState } from "react";
-import type { LabeledSpinnerProps } from "./types";
-import { defaultPreset } from "./presets";
+import type { LabeledSpinnerProps } from "./types.js";
+import { defaultPreset } from "./presets.js";
 
 /**
  * OpenTUI spinner row that advances preset frames on an interval beside optional label text.
@@ -48,10 +48,10 @@ const LabeledSpinner = ({
 
   const gapSpaces = " ".repeat(gap);
 
-  const spinnerElement = <text fg={color}>{frames[frame]}</text>;
+  const spinnerElement = <text {...(color === undefined ? {} : { fg: color })}>{frames[frame]}</text>;
 
   const labelElement = (
-    <text fg={labelColor ?? (dimLabel ? "#666666" : undefined)}>{label}</text>
+    <text {...((labelColor ?? (dimLabel ? "#666666" : undefined)) === undefined ? {} : { fg: labelColor ?? "#666666" })}>{label}</text>
   );
 
   if (labelPosition === "left") {

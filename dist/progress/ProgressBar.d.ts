@@ -5,7 +5,7 @@
  * @see packages/opentui-ui-kit/src/progress/types.ts - Prop type definitions for the progress bar component.
  * @documentation reviewed=2026-05-07 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-import { ProgressBarProps } from "./types";
+import type { ProgressBarProps } from "./types.js";
 /**
  * Renders a two-tone OpenTUI progress bar from a numeric ratio against `max`.
  *
@@ -16,4 +16,3 @@ import { ProgressBarProps } from "./types";
 declare const ProgressBar: ({ value, max, width, fillChar, emptyChar, fillColor, emptyColor, }: ProgressBarProps) => import("react").ReactNode;
 export { ProgressBar };
 export default ProgressBar;
-//# sourceMappingURL=ProgressBar.d.ts.map

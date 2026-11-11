@@ -88,4 +88,3 @@ export function MultiSelectWithSelectAll({ options, selected, onChange, maxHeigh
                 return (_jsxs("box", { children: [_jsx("text", { children: isCursor ? "> " : "  " }), _jsx("text", { children: isSelected ? "[✓] " : "[ ] " }), _jsx("text", { children: displayLabel })] }, option.value));
             }), totalItems > maxHeight && (_jsxs("text", { children: [visibleStart > 0 ? "↑ " : "  ", "Showing ", visibleStart + 1, "-", visibleEnd, " of ", totalItems, visibleEnd < totalItems ? " ↓" : ""] })), _jsxs("text", { children: ["Selected: ", selected.length, " / ", enabledOptions.length] }), showHelp && _jsx("text", { children: "Press space to toggle, arrows to navigate" })] }));
 }
-//# sourceMappingURL=MultiSelectWithSelectAll.js.map

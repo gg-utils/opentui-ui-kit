@@ -5,7 +5,7 @@
  * @see packages/opentui-ui-kit/src/progress/types.ts - Prop type definitions for the progress bar component.
  * @documentation reviewed=2026-05-07 standard=FILE_OVERVIEW_STANDARDS_TYPESCRIPT@3
  */
-import { ProgressBarProps } from "./types";
+import type { ProgressBarProps } from "./types.js";
 
 /**
  * Coerces a numeric input into the inclusive `[min, max]` interval.
